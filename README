@@ -1,0 +1,37 @@
+CS485 - Systems Programming
+Project 1: File Combiner
+
+Ethan Gibson
+Completed: January 28, 2017
+
+---------------
+Included Files:
+---------------
+-combineFiles.c
+Source code for the project with comments that describe the functionality of the program.
+
+-README
+Describes how to run the program and how the program was tested.
+
+-Makefile
+Builds the program.
+
+---------------
+Known Bugs
+---------------
+None known
+
+---------------
+Testing
+---------------
+The program passed the following tests:
+-./combineFiles -a test.txt
+-./combineFiles -s5 test.txt
+-./combineFiles -e5 test.txt
+-./combineFiles -a combineFiles
+-./combineFiles -s15 combineFiles
+-./combineFiles -e20 combineFiles
+-./combineFiles -a test.txt -s12 test2.txt -e15 test3.txt -a -
+
+The program failed as expected with the errors displayed for the following testss:
+-./combineFiles -a -s4 -missingfile (file not found)
